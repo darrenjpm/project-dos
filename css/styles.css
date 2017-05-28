@@ -1,36 +1,47 @@
 @media screen and (min-width:320px){
 
-header, h1, h2 {
+/***********************
+HEADER
+************************/  
+  
+header, h1, h2, a {
   background-image: url("/img/stardust.png");
-  font-size: 200%;
+  font-size: 150%;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
-  color: black;
+  color: #F8F8FF;
   text-align: center;
 }
+
+/*****************
+BODY
+******************/
+  
+  
   
 #sectty {
   max-width:320px;
     }
   
- #imaggyy li {
+#imaggyy li {
   
    float: left;
    width: 100%;
-  
-  
   }
   
-  
-  
-
 body, h1 {
    
     font-family:'Orbitron', 'sans-serif';
     text-align: center;
     background-image: url("/img/stardust.png");
-    background-size:contain;
+    background-size: contain;
   }
+
+body, p {
+  font-size: 150%;
+  }
+  
+  
 a:link {
     color: black;
 }
@@ -40,6 +51,5 @@ a:visited {
 a:hover {
     color: white;
 }
-  
   
 }
