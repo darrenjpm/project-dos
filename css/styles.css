@@ -1,31 +1,45 @@
 @media screen and (min-width:320px){
 
-  /********************
-  Header
-  ***************/
-  
-#header{
-  font-family:'Orbitron', sans-serif;
-  
-  }
-h1{
-  font-family:'Orbitron', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height:0.8em;
-}
-#navigation{
-  font-family:'Orbitron', sans-serif;
-  
-  }
-  /*****************
-  Body
-  *****************/
-  
-  body{
-  
+header, h1, h2 {
+  background-image: url("/img/stardust.png");
+  font-size: 200%;
   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+  
+#sectty {
+  max-width:320px;
+    }
+  
+ #imaggyy li {
+  
+   float: left;
+   width: 100%;
+  
+  
   }
+  
+  
+  
+
+body, h1 {
+   
+    font-family:'Orbitron', 'sans-serif';
+    text-align: center;
+    background-image: url("/img/stardust.png");
+    background-size:contain;
+  }
+a:link {
+    color: black;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: white;
+}
+  
   
 }
