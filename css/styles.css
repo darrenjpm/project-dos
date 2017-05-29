@@ -6,7 +6,7 @@ HEADER
   
 header, h1, h2, a {
   background-image: url("/img/stardust.png");
-  font-size: 150%;
+  font-size: 24px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   color:  #cb4154;
@@ -15,6 +15,18 @@ header, h1, h2, a {
   padding: none;
   margin: none;
   }
+  
+ nav li{
+    display:inline-block;
+    list-style: none;
+    margin: 0 1px 10px;
+	  padding: 20px;
+    border-style: groove;
+    border-radius: 10px;
+    float: none;
+  }
+  
+ 
 
 /*****************
 BODY
@@ -24,15 +36,7 @@ BODY
     height: auto;
   
   }  
-nav li{
-  list-style: none;
-  margin: 0 15px 10px;
-	padding: 10px;
-  border-style: groove;
-  border-radius: 15px;
-  
-  
-  }  
+
 
   
 #imaggyy li {
@@ -51,7 +55,7 @@ body, h2 {
   }
 
 body, p {
-  font-size: 150%;
+  font-size: 18px;
   color: #F8F8FF;
   }
   
@@ -62,6 +66,12 @@ body, p {
   color: #cb4154;
   list-style: none;
   }
+.details{
+float:left;
+font-size:16px;
+  
+  }  
+  
 #name{
   float: left;
   display:inline-block;
@@ -69,9 +79,14 @@ body, p {
 #BTT {
   float: right;
   color: #F8F8FF;
-  font-size: 130%;
+  font-size: 16px;
   display:inline-block;
   }
+
+#contact {
+  margin-top: 200px;
+  font-size: 20px;
+  }  
   
   
 a:link {
