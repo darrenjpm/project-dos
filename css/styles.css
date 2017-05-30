@@ -1,60 +1,78 @@
 @media screen and (min-width:320px){
 
+/********************
+  GENERAL
+********************/
+*{
+  box-sizing: border-box;
+ }
+  
+body{
+ background-image: url("/img/stardust.png");  
+ text-align: center; 
+ font-family: 'Orbitron', sans-serif;
+ }
+  
+
+  
+  
+  
 /***********************
 HEADER
 ************************/  
   
-header, h1, h2, a {
-  background-image: url("/img/stardust.png");
-  font-size: 24px;
+header h1{
+ 
+  font-size: 220%;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
-  color:  #cb4154;
+  color:  black;
   text-align: center;
   text-decoration: none;
-  padding: none;
-  margin: none;
+ 
   }
   
- nav li{
-    display:inline-block;
+ nav ul li{
+    font-size: 150%;
+    margin: 10px;
+    padding: 10px;
     list-style: none;
-    margin: 0 1px 10px;
-	  padding: 20px;
     border-style: groove;
     border-radius: 10px;
-    float: none;
+    color: #cb4154;
+    text-decoration:none;  
+  
   }
+ 
+  
   
  
-
 /*****************
 BODY
 ******************/
-.images {
-    width: 100%;
-    height: auto;
+img {
+    max-width:100%;
+    margin-bottom: 20px;
+    list-style: none;
+ } 
   
-  }  
-
-
-  
-#imaggyy li {
-   list-style: none;
-   float: left;
-   width: 100%;
-   list-style: none;
+ul{
+  list-style:none;
   }
+
   
-body, h2 {
+h2 {
      
     font-family:'Orbitron', 'sans-serif';
     text-align: center;
     background-image: url("/img/stardust.png");
-    background-size: contain;
+    font-size: 180%;
+    color: #8A0707;
+    padding: none;
+    margin-bottom:20px;
   }
-
-body, p {
+  
+p {
   font-size: 18px;
   color: #F8F8FF;
   }
@@ -62,15 +80,16 @@ body, p {
 /****************
   footer & such
 *****************/  
+  
 .bottom-list{
-  color: #cb4154;
+  color: #8A0707;
   list-style: none;
   }
-.details{
-float:left;
-font-size:16px;
   
-  }  
+.details {
+float:left;
+font-size:150%;
+ }  
   
 #name{
   float: left;
@@ -79,18 +98,26 @@ font-size:16px;
 #BTT {
   float: right;
   color: #F8F8FF;
-  font-size: 16px;
+  font-size: 120%;
   display:inline-block;
   }
 
-#contact {
-  margin-top: 50px;
-  font-size: 24px;
-  }  
+#contact, p {
+  margin-bottom: 20px;
+  font-size: 130%;
+  } 
+  
+.digits{
+  text-align:center;
+  
+  }
   
   
 a:link {
-    color: black;
+    color:#000000;
+    text-decoration:none;
+    font-weight:900;
+    
 }
 a:visited {
     color: grey;
@@ -99,4 +126,3 @@ a:hover {
     color: white;
 }
   
-}
