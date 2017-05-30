@@ -1,0 +1,128 @@
+@media screen and (min-width:320px){
+
+/********************
+  GENERAL
+********************/
+*{
+  box-sizing: border-box;
+ }
+  
+body{
+ background-image: url("../img/stardust.png");  
+ text-align: center; 
+ font-family: 'Orbitron', sans-serif;
+ }
+  
+
+  
+  
+  
+/***********************
+HEADER
+************************/  
+  
+header h1{
+ 
+  font-size: 220%;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  color:  black;
+  text-align: center;
+  text-decoration: none;
+ 
+  }
+  
+ nav ul li{
+    font-size: 150%;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-style: groove;
+    border-radius: 10px;
+    color: #cb4154;
+    text-decoration:none;  
+  
+  }
+ 
+  
+  
+ 
+/*****************
+BODY
+******************/
+img {
+    max-width:100%;
+    margin-bottom: 20px;
+    list-style: none;
+ } 
+  
+ul{
+  list-style:none;
+  }
+
+  
+h2 {
+     
+    font-family:'Orbitron', 'sans-serif';
+    text-align: center;
+    background-image: url("/img/stardust.png");
+    font-size: 180%;
+    color: #8A0707;
+    padding: none;
+    margin-bottom:20px;
+  }
+  
+p {
+  font-size: 18px;
+  color: #F8F8FF;
+  }
+  
+/****************
+  footer & such
+*****************/  
+  
+.bottom-list{
+  color: #8A0707;
+  list-style: none;
+  }
+  
+.details {
+float:left;
+font-size:150%;
+ }  
+  
+#name{
+  float: left;
+  display:inline-block;
+  }
+#BTT {
+  float: right;
+  color: #F8F8FF;
+  font-size: 120%;
+  display:inline-block;
+  }
+
+#contact, p {
+  margin-bottom: 20px;
+  font-size: 130%;
+  } 
+  
+.digits{
+  text-align:center;
+  
+  }
+  
+  
+a:link {
+    color:#000000;
+    text-decoration:none;
+    font-weight:900;
+    
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: white;
+}
+  
