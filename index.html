@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-      <meta charset="utf-8">
-      <title>Darren Murray || responsive layout</title>
-      <link rel ="stylesheet" href="css/styles.css">
-      <link href="https://fonts.googleapis.com/css?family=Orbitron:500,900" rel="stylesheet">
-     <meta name ="viewpoint" content="width=device-width, initial-scale= 1,0">
-  </head>
-  <body>
-  <header>
-    <a href="index.html">
-       <h1>Darren Murray</h1>
-    </a>
-    </header>
-    <nav>
-      <ul>
-            <li><a href="#home">Home</a></li> 
-            <li><a href="#portfolio">Portfolio</a></li> 
-            <li><a href="#contact">Contact</a></li> 
-      </ul>
-    </nav>
-  
-   <img src="img/responsive-layout-profile.png" alt="Profile image" id="profile">
-   <div class="secttyy">
-   <section>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Darren Murray || responsive layout</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=Orbitron:500,900" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+    
+		<header class="main-header">
+			<div class="container">
+				<h1 class="name"><a href="#">Darren Murray</a></h1>
+        
+				<ul class="main-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
+					
+				</ul>
+			</div><!--/.container---> 
+		</header>
+		
+		<div class="container">
+    
+    <div class="primary col">
+      <img src="img/responsive-layout-profile.png" alt="Profile image" id="profile">
+      <p>Hello!! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at treehouse and am pretty excited to put all my skills to use!</p>
+    </div> <!--/.primary--->
+   
+  <div class="secondary col">
    <ul>
-      <p>Hello!! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at treehouse and am pretty excited to          put all my skills to use!</p>
-     <h2 id="portty">Portfolio</h2>
      <li>
+        <h1 id="portty">Portfolio</h1>
         <img src="img/portfolio-1.png" alt="Marketing Page">
         <h2>Marketing Page</h2>
         <p>This project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
@@ -44,7 +49,6 @@
          <h2>Travel App</h2>
          <p>This projet compares travel times based on different transportation methods and tells you the best one</p>
     </li>
-    
     <li>
          <img src="img/portfolio-4.png" alt="Map Of Favourite spots">
          <h2>Map Of Favourite Spots</h2>
@@ -55,15 +59,17 @@
          <h2>Photo Gallery</h2>
          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
     </li>
-      
-     <li>
+    <li>
          <img src="img/portfolio-6.png" alt="Calculator">
          <h2>Calculator</h2>
          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
     </li>
     </ul>
-   
-   <ul class="bottom-list">
+    	</div><!--/.secondary--->
+  
+  
+  <div class="third col">
+   <ul>
     <li id="contact">Contact</li>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
       <li class="details">Phone</li>
@@ -71,11 +77,15 @@
       <li class="details">Email</li>
      </ul>
       <p class="digits">email@yoursite.com</p>
-       </section> 
-     <footer>
-    <p id="name">&copy; Darren Murray</p>
-      <p  id="BTT"><a href="#top">back to top</a></p>
-    </footer>
-   </div>  
-  </body>
+ 
+  </div>  <!--/.third col--->
+	</div><!--/.container---> 
+    
+  </div><!--/.wrap--->
+	
+	<footer class="main-footer">
+		<span id="name">&copy; Darren Murray</span>
+    <span  id="BTT"><a href="#top">back to top</a></span>
+	</footer>
+</body>
 </html>

@@ -1,0 +1,217 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align:center;
+  display:inline-block
+	line-height: 1.6;
+	color: #3a3a3a; 
+  font-family: 'Orbitron', sans-serif;
+}
+
+p  {
+  font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2{
+color: #093a58;
+
+}
+
+a { 
+	color: #f3f3f3;
+	text-decoration: none;
+}
+
+a:hover{
+color:#36454f; 
+}
+
+img{
+ max-width:100%;
+ margin: auto;
+}
+
+#profile{
+ padding-top: 20px;
+
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-nav li {
+    font-size: 100%;
+    font-weight:800;
+    margin: 10px;
+    list-style: none;
+    border-style: groove;
+    border-radius: 10px;
+    text-decoration:none;  
+    text-align:center;
+    box-shadow: 0px 2px 7px 10px rgb(50,	47,	43);
+}
+
+
+
+/* ---- Navigation ---- */
+
+ .main-header{
+    text-align:center;
+} 
+ 
+.name a {
+  
+  text-align: centre;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+ 
+}
+
+.name a,
+.main-nav a{
+  text-align: center;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.main-nav a{
+  padding: 10px 15px; 
+  text-transform: uppercase;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-header {
+	padding: 1.5em 0;
+	background: black;
+}
+
+.main-footer { 
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+  
+/* ================================= 
+  Base Element Styles
+==================================== */  
+
+.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+  
+/* ---- Navigation ---- */
+  
+.main-header{
+    text-align:center;
+} 
+  
+.name ,
+.main-nav li {
+    
+    text-align: center;
+    display: inline-block;
+  
+  }
+
+/* ---- Layout Containers ---- */
+  
+ .primary ul {
+  text-align:center;
+  display: inline-block;
+  width: 50%;
+  margin-right:-4px;
+  vertical-align: top;
+  padding-left: 1em;
+	padding-right: 1em; 
+  background: #D3D3D3;
+ }
+.primary{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:1px solid red;
+  overflow:hidden;
+  }  
+.primary p{
+  padding-top:10px;
+  
+  }  
+
+  
+.secondary{
+    background: #D3D3D3;
+    border:1px solid red;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+ }
+  }
+  
+#profile{
+  width: auto;
+  float: right;
+  padding-left: 10px;
+  padding-bottom:20px;
+ 
+  
+  }
+  
+.clearfix::after{
+  content:"";
+  display: table;
+  clear:both;
+  
+  }
+  #portty{
+  text-align:center;
+ 
+  
+  
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
