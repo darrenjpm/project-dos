@@ -1,80 +1,70 @@
-/* ================================= 
+ /* ================================= 
   Base Element Styles
 ==================================== */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  text-align:center;
-  display:inline-block
+	font-family: 'Orbitron', sans-serif;
 	line-height: 1.6;
-	color: #3a3a3a; 
-  font-family: 'Orbitron', sans-serif;
+	color: #3a3a3a;
+  text-align: center;
+  background:#E8E8E8  ;
 }
 
-p  {
-  font-size: .95em;
-	margin-bottom: 1.5em;
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
 }
 
-h2{
-color: #093a58;
-
+h2
+{
+	color: #093a58;
 }
 
-a { 
-	color: #f3f3f3;
-	text-decoration: none;
-}
+a{
+  text-decoration: none;
+  color: #ffffff;
 
-a:hover{
-color:#36454f; 
 }
 
 img{
- max-width:100%;
- margin: auto;
+  max-width: 100%;
+  box-shadow: 0px 5px 20px 5px black;
+ }
+
+#Contact{
+ border-bottom: 3px solid;
+   margin: 5% 15%;
+
 }
 
-#profile{
- padding-top: 20px;
-
-}
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
-.main-nav li {
-    font-size: 100%;
-    font-weight:800;
-    margin: 10px;
-    list-style: none;
-    border-style: groove;
-    border-radius: 10px;
-    text-decoration:none;  
-    text-align:center;
-    box-shadow: 0px 2px 7px 10px rgb(50,	47,	43);
-}
-
-
-
 /* ---- Navigation ---- */
 
- .main-header{
-    text-align:center;
-} 
- 
-.name a {
-  
-  text-align: centre;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 900;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  color: white;
+.main-header{
+  background: #000000;
+}
+
+a:hover{
+	color: #36454f;
+}
+
+.name,
+.main-nav {
+  display:block;
+  text-align:center;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+.name{
+  padding-top:0px;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -87,131 +77,201 @@ img{
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
- 
-}
-
-.name a,
-.main-nav a{
-  text-align: center;
-  padding: 10px 15px;
-  display: inline-block;
-}
-
-.main-nav a{
-  padding: 10px 15px; 
-  text-transform: uppercase;
 }
 
 /* ---- Layout Containers ---- */
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 .main-header {
-	padding: 1.5em 0;
-	background: black;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
-.main-footer { 
+
+
+.main-footer {
 	text-align: center;
-	padding: 2em 0;
-	background: #d9e4ea;
+  border-top: 1.5px solid #323232;
+  padding: 2em 0;
+  margin-top: 30px;
+  border-bottom: 3px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  
 }
+
+
+#portty{
+  border-bottom: 3px solid;
+  margin: 8% 15%;
+  
+}
+
+.banner{
+margin-top: 10px;
+
+}
+
+#name{
+float: left;
+}
+
+
+
+#BTT a{
+ color: black;
+ float: right;
+}
+
+
+.footer-nav{
+	display: none;
+}
+
+
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media screen and (min-width: 768px) {
-  
+@media (min-width: 768px) {
+
 /* ================================= 
-  Base Element Styles
-==================================== */  
+  Base Layout Styles
+==================================== */
 
-.wrap {
-		min-height: calc(100vh - 89px);
+.container {
+		width: 90%;
+		margin: 0 auto;
 	}
+ 
 
-  
-/* ---- Navigation ---- */
-  
-.main-header{
-    text-align:center;
-} 
-  
-.name ,
-.main-nav li {
-    
-    text-align: center;
-    display: inline-block;
-  
-  }
 
-/* ---- Layout Containers ---- */
-  
- .primary ul {
-  text-align:center;
-  display: inline-block;
-  width: 50%;
-  margin-right:-4px;
-  vertical-align: top;
-  padding-left: 1em;
-	padding-right: 1em; 
-  background: #D3D3D3;
- }
+.main-nav li{
+  display:inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#profile-pic{
+margin-top:10px;
+float: right;
+width: 35%;
+}
+
+/* ----COLUMNS ---- */
 .primary{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border:1px solid red;
-  overflow:hidden;
-  }  
-.primary p{
-  padding-top:10px;
-  
-  }  
+clear:both;
+}
 
-  
 .secondary{
-    background: #D3D3D3;
-    border:1px solid red;
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
- }
-  }
-  
-#profile{
-  width: auto;
-  float: right;
-  padding-left: 10px;
-  padding-bottom:20px;
+clear:both;
+
+}
+
+.banner img {
+		margin: auto;
+}
+.banner p{
+    width: 65%;
+		float: left;
+    text-align: left;
+}
+
+.banner{
+margin-top: 3%;
+
+
+}
+
  
-  
-  }
-  
-.clearfix::after{
-  content:"";
-  display: table;
-  clear:both;
-  
-  }
-  #portty{
-  text-align:center;
- 
-  
-  
-  }
-  
+.first,
+.second,
+.third{
+  width: 50%;
+  float: left;
+  padding-left: 25px;
+
+}
+
+/* ---- FOOTER ---- */
+
+#BTT{
+	display: none;
 }
 
 
+.footer-nav {
+padding-top: 0px;
+display:inline-block;
+margin-left: 15px;
+float: right;
+padding-right: 20px;
+
+}
+
+.footer-nav a{
+color: black;
+}
+
+/* ---- Float clearfix ---- */
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 1024px) {
+.container {
+		width: 95%;
+		margin: 0 auto;
+	}
 
 
+.name{
+float: left;
+padding-top: 20px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+.main-nav{
+float:right;
+padding-bottom: 0px;
+padding-top: 60px;
+}
+
+.col{
+margin: auto;
+width: 100%;
+}
+
+.banner{
+margin-top:10px;
+
+}
+
+.banner img {
+		margin: auto;
+    width: 35%;
+}
+.banner p{
+    width: 63%;
+		float: left;
+    text-align: left;
+}
+
+.first,
+.second,
+.third{
+width: 33.3%;
+
+}
 
 
-
-
-
+}
 
